@@ -1,7 +1,9 @@
 {
+ "homepage": "https://hamza-47-github.github.io/reactTemplate",
+
   "name": "my-app",
   "version": "0.1.0",
-  "home": "/react/template/",
+
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.3.6",
@@ -69,7 +71,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -90,10 +94,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-beautiful-dnd": "^13.1.8",
     "@types/react-bootstrap": "^0.32.36",
     "@types/react-datepicker": "^6.2.0",
     "@types/react-redux": "^7.1.33",
-    "@types/react-slick": "^0.23.13"
+    "@types/react-slick": "^0.23.13",
+    "gh-pages": "^6.3.0"
   }
 }
